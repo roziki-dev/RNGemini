@@ -1680,6 +1680,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@google/generative-ai@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@google/generative-ai@npm:0.16.0"
+  checksum: ac848403d4e2a4d08ff1eafcdfddc710e6f5fdebaff22d7c032e9f4f583b711294d00277b4fb4233b6cc9165ad07187672fd066b4dc77cecb69480ba6e2218eb
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -2754,6 +2761,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
+    "@google/generative-ai": ^0.16.0
     "@react-native-community/eslint-config": ^3.2.0
     "@tsconfig/react-native": ^2.0.2
     "@types/jest": ^29.2.1
@@ -2766,6 +2774,7 @@ __metadata:
     prettier: ^2.4.1
     react: 18.2.0
     react-native: 0.71.7
+    react-native-config: ^1.5.2
     react-test-renderer: 18.2.0
     typescript: 4.8.4
   languageName: unknown
@@ -8061,6 +8070,18 @@ __metadata:
     jscodeshift: ^0.14.0
     nullthrows: ^1.1.1
   checksum: 3624f18f4a3d12d3ab304b2c5beaeb59bdf7eb2ce74a44a660cb028846a0993437ab733fe2423f9455d96838628853c8e26cea004c1720b358ee5aed2d46278b
+  languageName: node
+  linkType: hard
+
+"react-native-config@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "react-native-config@npm:1.5.2"
+  peerDependencies:
+    react-native-windows: ">=0.61"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: fc777546557704629f7aabdd2cf24decdea666ba90975602523103ed0a26a358f2f23241cae2aed646b82784e657cc01ecf7b6df2d5524d6b0ea3edfa9054d7f
   languageName: node
   linkType: hard
 
