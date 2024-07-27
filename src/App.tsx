@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 
 import {
   ActivityIndicator,
@@ -15,20 +15,15 @@ import {
 } from 'react-native';
 
 import Config from 'react-native-config';
-import {
-  FunctionDeclarationSchemaType,
-  GoogleGenerativeAI,
-} from '@google/generative-ai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const API_KEY: any | string = Config.GEMINI_AI_KEY;
 
 function App() {
+  const refScroll = useRef();
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({
     model: 'gemini-1.5-flash',
-    generationConfig: {
-      responseMimeType: 'application/json',
-    },
   });
   const [prompt, setPromp] = useState('');
   const [listResult, setListResult] = useState([]);
@@ -61,11 +56,12 @@ function App() {
       setListResult(o => [...o, resultObj]);
       setPromp('');
       setLoading(false);
+      refScroll.current && refScroll.current.scrollToEnd({ animated: true });
     } catch (error) {
       console.log('Error: ', error);
       setLoading(false);
     }
-  }, [model, prompt]);
+  }, [model, prompt, refScroll]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -74,30 +70,16 @@ function App() {
         <Text style={styles.title}>Google Gemini AI</Text>
       </View>
       <FlatList
+        ref={refScroll}
         keyExtractor={(item, index) => index.toString()}
         data={listResult}
-        renderItem={({item}) => (
+        renderItem={({ item }) => (
           <View style={styles.itemWrap}>
             <View style={styles.itemImg} />
-            <View style={{flex: 1}}>
+            <View style={{ flex: 1 }}>
               <Text style={styles.name}>{item?.name}</Text>
               <View style={styles.result}>
-                <Text style={styles.resultText}>
-                  {item?.result
-                    .split(/\*\*(.*?)\*\*/g)
-                    .map((text: string, index: number) => {
-                      console.log(index, text);
-
-                      if (index % 2 === 0) {
-                        return text;
-                      }
-                      return (
-                        <Text key={index} style={styles.bold}>
-                          {text}
-                        </Text>
-                      );
-                    })}
-                </Text>
+                <Text style={styles.resultText}>{item.result}</Text>
               </View>
             </View>
           </View>
