@@ -1,7 +1,7 @@
-# React Native Chat AI using Gemini ##
+# React Native Chat AI using Gemini
 create chat whit google gemini AI
 
-### Required: ###
+### Required:
 * Node >18
 * JDK 17
 * Xcode 14.2
