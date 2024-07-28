@@ -1,4 +1,4 @@
-**React Native Gemini**
+**React Native Chat AI using Gemini**
 
 Required:
 1. Node >18
