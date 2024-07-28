@@ -1,4 +1,4 @@
-#React Native Gemini
+**React Native Gemini**
 
 Required:
 1. Node >18
