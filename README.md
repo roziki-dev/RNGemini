@@ -18,8 +18,8 @@ To run this project, you will need to add the following environment variables to
 ## Generate API Key
 visit https://aistudio.google.com/app/apikey
 
-## Demo
-
+## Screenshot
+![screenshot](./images/ScreenShot.png)
 
 ## Feedback
 
