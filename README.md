@@ -6,5 +6,6 @@ Required:
 3. Xcode 14.2
 
 *Environment Variable*
-create file on root project {ProjectDir}/.env
-GEMINI_AI_KEY=YOUR_KEY
+
+create file on root project {ProjectDir}/.env:
+1. GEMINI_AI_KEY=YOUR_KEY
