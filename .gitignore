@@ -65,6 +65,6 @@ yarn-error.log
 #disable environment
 .env
 .env.*
-.yarn/*
+.yarn/
 yarn.lock
 package-lock.json

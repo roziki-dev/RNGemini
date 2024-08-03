@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "ENVFILE=.env react-native run-android",
     "ios": "ENVFILE=.env react-native run-ios",
+    "ios:build": "ENVFILE=.env react-native build-ios --mode \"Release\"",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean": "cd android; ./gradlew clean"
   },
   "dependencies": {
     "@google/generative-ai": "^0.16.0",
@@ -16,7 +18,7 @@
     "react-native": "0.71.7",
     "react-native-config": "^1.5.2",
     "react-native-gradient-texts": "^0.1.0",
-    "react-native-svg": "^15.4.0",
+    "react-native-svg": "^14.2.0",
     "react-native-vector-icons": "^10.1.0"
   },
   "devDependencies": {
