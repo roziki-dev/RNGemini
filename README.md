@@ -23,7 +23,7 @@ visit https://aistudio.google.com/app/apikey
 
 ## Feedback
 
-If you have any feedback, please reach out to xx us create issues
+If you have any feedback, please contact us in the discussion forum or create an issue
 
 ## Badges
 
