@@ -15,8 +15,8 @@ import {
 import Config from 'react-native-config';
 import {GoogleGenerativeAI} from '@google/generative-ai';
 import GradientText from 'react-native-gradient-texts';
-import {Footer} from './assets/components/Footer';
-import {EmptyState} from './assets/components/EmptyState';
+import {Footer} from './components/Footer';
+import {EmptyState} from './components/EmptyState';
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -104,7 +104,7 @@ function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="dark-content" backgroundColor={'#fff'} />
 
       <View style={styles.header}>
         <GradientText
@@ -184,6 +184,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderBottomColor: '#e8e8e8',
     borderBottomWidth: 1,
+    paddingTop: 16,
   },
   body: {
     flex: 1,
