@@ -1,5 +1,5 @@
 # React Native Chat AI using Gemini
-create chat whit google gemini AI
+create chat with google gemini AI
 
 ### Required:
 * Node >18
@@ -23,7 +23,7 @@ visit https://aistudio.google.com/app/apikey
 
 ## Feedback
 
-If you have any feedback, please reach out to us at muh.roziki@gmail.com or create issues
+If you have any feedback, please reach out to xx us create issues
 
 ## Badges
 
