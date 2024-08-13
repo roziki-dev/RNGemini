@@ -662,7 +662,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.rzforce.AIGemini.abc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sayto.gemini;
 				PRODUCT_NAME = AIGemini;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -691,7 +691,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.rzforce.AIGemini.abc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sayto.gemini;
 				PRODUCT_NAME = AIGemini;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
